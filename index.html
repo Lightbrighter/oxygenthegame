@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Oxygen</title>
+	<meta name="description" content="Oxygen, you play we plant">
+	<meta name="keywords" content="oxygen, CO2N, Hitw2019, Hack in the Woods, tree, planting, environment, ecology">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="./styles/styles.css">
+	<script src="./script/script.js"></script>
+</head>
+<body onmousemove="mouseMove(event)">
+	<div id="gameBackground">
+		<img src="./img/nuage1.png" id="cloud">
+		<img src="./img/nuage2.png" id="cloud_b">
+		<div class="snow snow1"></div>
+		<div id="sun"></div>
+
+		<div id="gameBackground_a">
+			<img src="./img/gameBackground_a.png" id="gameBackground_a_img">
+		</div>
+
+		<div id="gameBackground_b">
+			<img src="./img/gameBackground_b.png" id="gameBackground_b_img">
+		</div>
+
+		<div id="gameBackground_c">
+			<img src="./img/gameBackground_c.png" id="gameBackground_c_img">
+		</div>
+	</div>
+
+	<div class="videoPage" id="videoPage">
+		<img src="./img/exitLogoWhite.png" class="exitLogoPage" onclick="videoPage()">
+		<video controls autoplay id="video">
+			<source src="./video/video.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<img src="./img/titre.png" id="titre">
+	<img src="./img/barre.png" id="barre">
+	<img src="./img/avatar.png" id="avatar">
+	<img src="./img/portail.png" id="portail" onclick="portailPage()">
+	<img src="./img/portail.png" id="portailB">
+	<img src="./img/arene.png" id="arene" onclick="arenePage()">
+	<img src="./img/arene.png" id="areneB">
+	<img src="./img/garbre.png" id="garbre">
+	<img src="./img/chateau.png" id="chateau" onclick="projetPage()">
+	<img src="./img/marchant.png" id="marchant" onclick="marchandPage()">
+	<img src="./img/garnison.png" id="garnison">
+
+	<div id="introText" onclick="introText()">
+		<img src="./img/texte.png" id="introTextImg">
+	</div>
+
+	<div id="playPopup" onclick="playPopup()">
+		<img src="./img/play.png" id="playPopupImg">
+	</div>
+
+	<div class="dropContainerA">
+	</div>
+	<div class="dropContainerB">
+	</div>
+	<div class="wrapper">
+        <div class="flame-wrapper">
+            <div class="flame red"></div>
+            <div class="flame orange"></div>
+            <div class="flame gold"></div>
+            <div class="flame white"></div>
+            <div class="base blue"></div>
+            <div class="base black"></div>
+        </div>
+        <img src="./img/buche.png" id="buche">
+    </div>
+
+	<div id="portailPage">
+		<img src="./img/exitLogoWhite.png" class="exitLogoPage" onclick="portailPage()">
+		<img src="./img/portailPage.png" id="portailPageImg">
+	</div>
+
+	<div id="marchandPage">
+		<img src="./img/exitLogoWhite.png" class="exitLogoPage" onclick="marchandPage()">
+		<img src="./img/marcherPage.png" id="marchandPageImg">
+		<div id="persoBox">
+			<img src="./img/persoTete.png" id="persoTete">
+			<img src="./img/persoBras.png" id="persoBras">
+			<img src="./img/persoJambes.png" id="persoJambes">
+		</div>
+	</div>
+
+	<div id="arenePage">
+		<img src="./img/exitLogoWhite.png" class="exitLogoPage" onclick="arenePage()">
+		<img src="./img/tempsArene.png" id="tempsArene">
+		<div class="areneImgDiv">
+			<img src="./img/arene_a.png" class="areneInside">
+			<img src="./img/arene_a_txt.png" class="areneTxt">
+		</div>
+		<div class="areneImgDiv">
+			<img src="./img/arene_b.png" class="areneInside">
+			<img src="./img/verrou.png" class="verrou">
+			<img src="./img/arene_b_txt.png" class="areneTxt">
+		</div>
+		<div class="areneImgDiv">
+			<img src="./img/arene_c.png" class="areneInside">
+			<img src="./img/verrou.png" class="verrou">
+			<img src="./img/arene_c_txt.png" class="areneTxt">
+		</div>
+		<div class="areneImgDiv">
+			<img src="./img/arene_d.png" class="areneInside">
+			<img src="./img/verrou.png" class="verrou">
+			<img src="./img/arene_d_txt.png" class="areneTxt">
+		</div>
+	</div>
+
+	<div class="projetPageWrapper">
+	<div class="projetPage">
+		<img src="./img/exitLogoWhite.png" class="exitLogoProjetPage" onclick="projetPage()">
+		<div class="homepage">
+				<div class="article_projet">
+	                <h3>Reforestation d'un désert</h3> 
+	                <img src="./img/localisation.png" class="localisationImg">
+	                <h4>Desert de Gobi</h4>
+	                
+	                <div class="img_projet_div">
+	                	<img class="img_projet" src="./img/desert.jpeg">
+	                </div>
+					<p class="article_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+	                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+	                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+	                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+	                    pariatur. Excepteur sint occaecat cupidatat non proident,
+	                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	                 <div class="participate">PARTICIPER</div>
+	            </div>
+	            <div class="article_projet">
+	                <h3>Construction d'une éolienne</h3>
+	                <img src="./img/localisation.png" class="localisationImg"> 
+	                <h4>Lille France</h4>
+	                <div class="img_projet_div">
+	                	<img class="img_projet" src="./img/eolienne.jpg">
+	                </div>
+					<p class="article_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+	                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+	                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+	                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+	                    pariatur. Excepteur sint occaecat cupidatat non proident,
+	                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	                    <div class="participate">PARTICIPER</div>
+	            </div>
+	            <div class="article_projet">
+	                <h3>Parrainage d'arbres</h3> 
+	                <img src="./img/localisation.png" class="localisationImg">
+	                <h4>Madagascar</h4>
+	                <div class="img_projet_div">
+	                	<img class="img_projet" src="./img/madagascar.jpg">
+	                </div>
+					<p class="article_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+	                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+	                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+	                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+	                    pariatur. Excepteur sint occaecat cupidatat non proident,
+	                    sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	                    <div class="participate">PARTICIPER</div>
+	            </div>
+	    </div>
+	</div>
+	</div>
+</body>
+</html>
