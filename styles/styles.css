@@ -1,0 +1,1155 @@
+			/* 1/ DISPLAY*/
+			/* 2/ DIMENSIONS */ 
+			/* 3/ POSITION */ 
+			/* 4/ STYLE */
+			/* 5/ ANIMATION */
+			/* 6/ 3D - TRANSFORM */
+
+body
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	width:100vw;
+	height:auto;
+	overflow:hidden;
+	/* 3/ POSITION */
+	/* 4/ STYLE */
+	margin:0;
+	background-color:lightblue;
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+	zoom:0;
+	cursor: url('../img/cursor.png'), pointer;
+}
+
+/* INFO BARRE */ 
+#barre
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	width:400px;
+	/* 3/ POSITION */ 
+	position:absolute;
+	right:0;
+	top:15%;
+	z-index:5;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	animation-name:barreAppear;
+	animation-duration: 1s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+@keyframes barreAppear
+{
+	0%
+	{
+		right:-400px;
+	}
+	100%
+	{
+		right:0px;
+	}
+}
+
+#avatar
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	width:150px;
+	/* 3/ POSITION */ 
+	position:absolute;
+	left:0;
+	top:15%;
+	z-index:5;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	animation-name:avatarAppear;
+	animation-duration: 1s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+@keyframes avatarAppear
+{
+	0%
+	{
+		left:-200px;
+	}
+	100%
+	{
+		left:0px;
+	}
+}
+
+/* FLYING ELEMENTS */ 
+
+#sun
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	width:70px;
+	height:70px; 
+	/* 3/ POSITION */ 
+	left:10%;
+	top:5%;
+	position:absolute;
+	margin: auto;  
+	/* 4/ STYLE */
+	border-radius:50%;	
+	background-color:#fbac13;
+	opacity:0.9;			
+	box-shadow: 0px 0px 40px 15px white;
+	/* 5/ ANIMATION */
+	animation-name:zoom;
+	animation-duration:2s;
+	animation-direction:alternate;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count: infinite;
+	/* 6/ 3D - TRANSFORM */  
+}
+
+@keyframes zoom
+{
+	0%
+	{
+		transform: scale(1);
+	}
+	100%
+	{
+		transform: scale(1.1);
+	}
+}
+
+#cloud
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	width:70px;
+	/* 3/ POSITION */ 
+	z-index:2;
+	top:20%;
+	position:absolute;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	animation-name:cloudMove;
+	animation-duration:70s;
+	animation-iteration-count:infinite;
+	animation-direction: linear;
+	/* 6/ 3D - TRANSFORM */	
+}
+
+@keyframes cloudMove
+{
+	0%
+	{
+		margin-left:-10%;
+	}
+	100%
+	{
+		margin-left:110%;
+	}
+}
+
+#cloud_b
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	width:120px;
+	/* 3/ POSITION */ 
+	z-index:2;
+	top:15%;
+	position:absolute;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	animation-name:cloudMove;
+	animation-duration:85s;
+	animation-iteration-count:infinite;
+	animation-direction: linear;
+	/* 6/ 3D - TRANSFORM */	
+}
+
+.snow 
+{
+	/*1/ DISPLAY */
+	/* 2/ DIMENSIONS */
+	/* 3/ POSITION */ 
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-image:url("../img/snow.png");
+	mix-blend-mode:screen;
+	z-index:3;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+.snow1
+{
+	animation :animateSnow 80s linear infinite;
+}
+
+/* CUTTED BACKGROUNDS */ 
+
+#gameBackground
+{
+	/*1/ DISPLAY */
+	/* 2/ DIMENSIONS */
+	/* 3/ POSITION */ 
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+#gameBackground_a_img
+{
+	/*1/ DISPLAY */
+	/* 2/ DIMENSIONS */
+	width:100vw;
+	height:100vh; 
+	/* 3/ POSITION */ 
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:3;
+	/* 4/ STYLE */
+	transform:scale(1.1);
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+#gameBackground_b_img
+{
+	/*1/ DISPLAY */
+	/* 2/ DIMENSIONS */
+	width:100vw;
+	height:100vh; 
+	/* 3/ POSITION */ 
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	/* 4/ STYLE */
+	transform:scale(1.15);
+	/* 5/ ANIMATION */
+	transition:0.3s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#gameBackground_c_img
+{
+	/*1/ DISPLAY */
+	/* 2/ DIMENSIONS */
+	width:100vw;
+	height:100vh; 
+	/* 3/ POSITION */ 
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	/* 4/ STYLE */
+	transform:scale(1.1);
+	/* 5/ ANIMATION */
+	transition:0.3s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+/* TITRE */ 
+#titre
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	width:330px; 
+	/* 3/ POSITION */
+	top:10vh;
+	left:35vw;
+	z-index:4; 
+	position:absolute;
+	/* 4/ STYLE */
+	padding:0.5em;
+
+	/* 5/ ANIMATION */
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+/* GAME MENU ELEMENTS */ 
+#portail
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	width:130px; 
+	/* 3/ POSITION */
+	top:45%;
+	left:20%;
+	z-index:4; 
+	position:absolute;
+	/* 4/ STYLE */
+	padding:0.5em;
+
+	/* 5/ ANIMATION */
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#portail:hover
+{
+	transform:scale(1.1);
+	-webkit-filter: drop-shadow(0px -5px 15px #81CFE0);
+	cursor: url('../img/cursorHover.png'), pointer;
+}
+
+@keyframes animateSnow 
+{
+	0%
+	{
+	background-position: 0 0;
+	}
+	100%
+	{
+	background-position: 1920px 1080px;
+	}
+}
+
+#arene
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	width:130px; 
+	/* 3/ POSITION */
+	top:82%;
+	left:2%;
+	z-index:4; 
+	position:absolute;
+	/* 4/ STYLE */
+	padding:0.5em;
+
+	/* 5/ ANIMATION */
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#arene:hover
+{
+	transform:scale(1.1);
+	-webkit-filter: drop-shadow(0px -5px 15px #81CFE0);
+}
+
+#garbre
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	width:130px; 
+	/* 3/ POSITION */
+	top:47%;
+	left:50%;
+	z-index:4; 
+	position:absolute;
+	/* 4/ STYLE */
+	padding:0.5em;
+
+	/* 5/ ANIMATION */
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#garbre:hover
+{
+	transform:scale(1.1);
+	-webkit-filter: drop-shadow(0px -5px 15px #81CFE0);
+}
+
+#chateau
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	width:130px; 
+	/* 3/ POSITION */
+	top:50%;
+	left:70%;
+	z-index:4; 
+	position:absolute;
+	/* 4/ STYLE */
+	padding:0.5em;
+
+	/* 5/ ANIMATION */
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#chateau:hover
+{
+	transform:scale(1.1);
+	-webkit-filter: drop-shadow(0px -5px 15px #81CFE0);
+}
+
+#marchant
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	width:130px; 
+	/* 3/ POSITION */
+	top:68%;
+	left:85%;
+	z-index:4; 
+	position:absolute;
+	/* 4/ STYLE */
+	padding:0.5em;
+	/* 5/ ANIMATION */
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#marchant:hover
+{
+	transform:scale(1.1);
+	-webkit-filter: drop-shadow(0px -5px 15px #81CFE0);
+}
+
+#garnison
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	width:130px; 
+	/* 3/ POSITION */
+	top:82%;
+	left:65%;
+	z-index:4; 
+	position:absolute;
+	/* 4/ STYLE */
+	padding:0.5em;
+	/* 5/ ANIMATION */
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#garnison:hover
+{
+	transform:scale(1.1);
+	-webkit-filter: drop-shadow(0px -5px 15px #81CFE0);
+}
+
+/* VIDEO */ 
+#videoPage
+{
+	/*1/ DISPLAY */
+	display:block;
+	/* 2/ DIMENSIONS */
+	width:100vw;
+	height:auto;
+	/* 3/ POSITION */ 
+	z-index:6;
+	
+	position:absolute;
+	/* 4/ STYLE */
+	border-radius:15px;
+	background-color:rgba(0,0,0,0.7);
+	/* 5/ ANIMATION */
+	animation-name:pageAppear;
+	animation-duration:2s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#video
+{
+	/*1/ DISPLAY */
+	/* 2/ DIMENSIONS */
+	width:100vw;
+	/* 3/ POSITION */ 
+	/* 4/ STYLE */
+	border-radius:15px;
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+/* INTRO TEXT */ 
+#introText
+{
+	/*1/ DISPLAY */
+	display:block;
+	/* 2/ DIMENSIONS */
+	width:450px;
+	height:400px;
+	/* 3/ POSITION */ 
+	z-index:5;
+	top:20vh;
+	left:30vw;
+	position:absolute;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	animation-name:pageAppear;
+	animation-duration:2s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#introTextImg
+{
+	/*1/ DISPLAY */
+	display:block;
+	/* 2/ DIMENSIONS */
+	width:350px;
+	height:auto;
+	/* 3/ POSITION */ 
+	margin:auto;
+	position:relative;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+/* PLAY POPUP */ 
+#playPopup
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	width:70px;
+	/* 3/ POSITION */ 
+	position:absolute;
+	left:0;
+	top:40%;
+	z-index:5;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	animation-name:avatarAppear;
+	animation-duration: 1s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#playPopupImg
+{
+	/*1/ DISPLAY */
+	/* 2/ DIMENSIONS */
+	width:70px;
+	height:auto;
+	/* 3/ POSITION */ 
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+/* PAGES*/ 
+
+/* MARCHAND PAGE */ 
+#marchandPage
+{
+	/*1/ DISPLAY */
+	display:none;
+	/* 2/ DIMENSIONS */
+	width:100vw;
+	height:auto;
+	/* 3/ POSITION */ 
+	z-index:5;
+	position:absolute;
+	/* 4/ STYLE */
+	border-radius:15px;
+	/* 5/ ANIMATION */
+	animation-name:pageAppear;
+	animation-duration:2s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#marchandPageImg
+{
+	width:100vw;
+	position:relative;
+}
+
+#persoBox
+{
+	width:auto;
+	top:25vh;
+	left:15vw;
+	position:absolute;
+	animation-name:persoMove;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+#persoTete
+{
+	width:300px;
+	z-index:6;
+	position:relative;
+}
+
+#persoBras
+{
+	width:300px;
+	position:relative;
+	top:0px;
+	left:-300px;
+	animation-name:brasMove;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+#persoJambes
+{
+	width:300px;
+	position:absolute;
+	left:0;
+	animation-name:jambesMove;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes brasMove
+{
+	0%
+	{
+
+	}
+	50%
+	{
+		transform:rotateX(-50deg);
+
+	}
+}
+
+@keyframes jambesMove
+{
+	0%
+	{
+
+	}
+	50%
+	{
+		transform:rotateX(-50deg);
+
+	}
+}
+
+@keyframes persoMove
+{
+	0%
+	{
+
+	}
+	50%
+	{
+		/*transform:translateY(50px);*/
+		transform:translate3d(0,50px,0);
+
+	}
+}
+
+/* PORTAIL PAGE*/ 
+
+#portailPage
+{
+	/*1/ DISPLAY */
+	display:none;
+	/* 2/ DIMENSIONS */
+	width:100vw;
+	height:auto;
+	/* 3/ POSITION */ 
+	z-index:5;
+	position:absolute;
+	/* 4/ STYLE */
+	border-radius:15px;
+	/* 5/ ANIMATION */
+	animation-name:pageAppear;
+	animation-duration:2s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+#portailPageImg
+{
+	width:100vw;
+	position:relative;
+}
+
+@keyframes pageAppear
+{
+	0%
+	{
+		opacity:0;
+	}
+	100%
+	{
+		opacity:0.8;
+	}
+}
+
+.exitLogoPage
+{
+	width:40px;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:6;
+	padding:0.5em;
+}
+
+#portailB
+{
+	/* 1/ DISPLAY*/
+	display:none;
+	/* 2/ DIMENSIONS */
+	width:250px; 
+	/* 3/ POSITION */
+	top:22%;
+	z-index:5; 
+	margin-left:500px;
+	position:absolute;
+	padding:0.5em;
+	/* 4/ STYLE */
+
+	/* 5/ ANIMATION */
+	animation-name:bigZoom;
+	animation-duration:2s;
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+	transform:scale(1);
+}
+
+@keyframes bigZoom
+{
+	0%
+	{
+		opacity:0;
+		margin-left:500px;
+	}
+	40%
+	{
+		opacity:1;
+		margin-left:500px;
+		width:350px;
+		transform:scale(1);
+	}
+	100%
+	{
+		opacity:1;
+		margin-left:500px;
+		width:350px;
+		transform:scale(5);
+	}
+}
+
+/* ARENE PAGE */ 
+#tempsArene
+{
+	width:190px;
+	margin:1em;
+	right:0;
+	top:15vh;
+	position:absolute;
+	transition:0.5s;
+}
+
+#arenePage
+{
+	/*1/ DISPLAY */
+	display:none;
+	/* 2/ DIMENSIONS */
+	width:100vw;
+	height:100vh;
+	/* 3/ POSITION */ 
+	z-index:6;
+	position:relative;
+	/* 4/ STYLE */
+	background-image:url('../img/fond.png');
+	background-size:cover;
+	/* 5/ ANIMATION */
+	animation-name:pageAppear;
+	animation-duration:2s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+.areneImgDiv
+{
+	position:relative;
+	width:auto;
+	top:20%;
+	display:inline-block;
+}
+
+.verrou
+{
+	width:90px;
+	position:relative;
+}
+
+.areneInside
+{
+	width:200px;
+	margin:1em;
+	top:40%;
+	left:15%;
+	position:relative;
+	transition:0.5s;
+}
+
+.areneInside:hover
+{
+	-webkit-filter: drop-shadow(0px -5px 15px #81CFE0);
+	cursor:pointer;
+}
+
+.areneTxt
+{
+	width:200px;
+	margin:0.5em auto;
+	position:relative;
+	display:block;
+}
+
+
+#areneB
+{
+	/* 1/ DISPLAY*/
+	display:none;
+	/* 2/ DIMENSIONS */
+	width:250px; 
+	/* 3/ POSITION */
+	top:22%;
+	z-index:5; 
+	margin-left:500px;
+	position:absolute;
+	padding:0.5em;
+	/* 4/ STYLE */
+
+	/* 5/ ANIMATION */
+	animation-name:bigZoom;
+	animation-duration:2s;
+	transition:0.5s;
+	/* 6/ 3D - TRANSFORM */
+	transform:scale(1);
+}
+
+@keyframes bigZoom
+{
+	0%
+	{
+		opacity:0;
+		margin-left:500px;
+	}
+	40%
+	{
+		opacity:1;
+		margin-left:500px;
+		width:350px;
+		transform:scale(1);
+	}
+	100%
+	{
+		opacity:1;
+		margin-left:500px;
+		width:350px;
+		transform:scale(5);
+	}
+}
+
+/* PROJET PAGE */
+.projetPageWrapper
+{
+	/* 1/ DISPLAY*/
+	display:block;
+	/* 2/ DIMENSIONS */ 
+	width:500px;
+	height:1000px;
+	overflow: hidden;
+	/* 3/ POSITION */ 
+	position:absolute;
+	left:30vw;
+	top:20vh;
+	/* 4/ STYLE */
+	border-radius:15px;
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+.projetPage
+{
+	/*1/ DISPLAY */
+	display:none;
+	/* 2/ DIMENSIONS */
+	width:500px;
+	height:500px;
+	overflow: scroll;
+	overflow-x:hidden;
+	padding-right:15px;
+	/* 3/ POSITION */ 
+	z-index:5;
+	position:absolute;
+	/* 4/ STYLE */
+	border-radius:15px;
+	opacity:0.8;
+	background-color:black;
+	font-family: arial;
+	/* 5/ ANIMATION */
+	animation-name:pageAppear;
+	animation-duration:2s;
+	/* 6/ 3D - TRANSFORM */
+}
+
+.exitLogoProjetPage
+{
+	width:40px;
+	position:sticky;
+	top:0;
+	left:0;
+	padding:0.5em;
+}
+
+.homepage{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	padding:0px 50px;
+	/* 3/ POSITION */ 
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+.article_projet{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	padding:0.7em;
+	/* 3/ POSITION */
+	margin:1em auto; 
+	/* 4/ STYLE */
+	border-radius:15px;
+	color: black;
+    background-color: rgba(255, 255, 255, 1); 
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+.article_projet h3
+{
+	text-align:center;
+}
+
+.article_projet h4
+{
+	width:150px;
+	display:inline-block;
+}
+
+.localisationImg
+{
+	width:25px;
+	position:relative;
+	display:inline-block;
+}
+
+.img_projet{
+	/* 1/ DISPLAY*/
+	display:block;
+	/* 2/ DIMENSIONS */ 
+	width:auto;
+    height: 170px;
+	/* 3/ POSITION */ 
+	margin: 1em auto;
+	position:relative;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+.img_projet_div
+{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */ 
+	width:350px;
+	/* 3/ POSITION */ 
+	position:relative;
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+.article_text{
+	/* 1/ DISPLAY*/
+	/* 2/ DIMENSIONS */
+	padding:0.5em; 
+	/* 3/ POSITION */ 
+	/* 4/ STYLE */
+	/* 5/ ANIMATION */
+	/* 6/ 3D - TRANSFORM */
+}
+
+.participate
+{
+	/* 1/ DISPLAY*/
+	width:100px;
+	height:auto;
+	/* 2/ DIMENSIONS */ 
+	/* 3/ POSITION */ 
+	margin:auto;
+	/* 4/ STYLE */
+	text-align:center;
+	color:white;
+	font-size:1em;
+	padding:1em;
+	border-radius:15px;
+	background-color:darkred;
+	/* 5/ ANIMATION */
+	transition:0.2s;
+	cursor:pointer;
+	/* 6/ 3D - TRANSFORM */
+}
+
+.participate:hover
+{
+	background-color:darkgreen;
+	color:white;
+}
+
+/* autre CSS jeremy */
+
+#don{
+    margin: 80px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.678);
+}
+
+.montant{
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+}
+
+/* EFFET EAU */
+
+div.dropContainerA:before,
+div.dropContainerA:after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  transform: translate(50%) rotateX(75deg);
+  border-radius: 100%;
+  opacity: 0;
+  top:85%;
+  left:22%;
+  width: 500px;
+  height: 500px;
+  border: 2px solid lightblue;
+  animation-name:dripple;
+  animation-duration:2s;
+  animation-direction: ease-out;
+  animation-iteration-count: infinite;
+}
+
+div.dropContainerB:before,
+div.dropContainerB:after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  transform: translate(50%) rotateX(75deg);
+  border-radius: 100%;
+  opacity: 0;
+  top:87%;
+  left:25%;
+  width: 500px;
+  height: 500px;
+  border: 2px solid lightblue;
+  animation-name:drippleB;
+  animation-duration:3s;
+  animation-direction: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dripple {
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+  }
+}
+
+@keyframes drippleB {
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+}
+
+/* EFFET FEU */
+
+#buche
+{
+	position:absolute;
+	width:50px;
+	top:-20px;
+	left:-5px;
+}
+
+.wrapper {
+    width: 25px;
+    min-height: 50px;
+    position: absolute;
+    display: block;
+    top:80%;
+    z-index:4;
+    left:32%;
+}
+.red {
+    width: 40px;
+    height: 40px;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+}
+.orange {
+    left:10px;
+    width: 22px;
+    height: 22px;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+}
+.gold {
+    left:10px;
+    width: 22px;
+    height: 22px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+.white {
+    left:12px;
+    width: 17px;
+    height: 17px;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+}
+
+.base {
+    border-radius: 50%;
+    position: absolute;
+}
+.flame-wrapper {
+    position: relative;
+    z-index:4;
+    animation: flicker 3ms ease-in infinite;
+}
+.flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+}
+@keyframes flicker {
+    0% {transform: rotate(-1deg);}
+    20% {transform: rotate(2deg) scaleY(1.05);}
+    40% {transform: rotate(-1deg);}
+    60% {transform: rotate(1deg);}
+    80% {transform: rotate(-1deg) scaleY(0.90);}
+    100% {transform: rotate(1deg);}
+}
